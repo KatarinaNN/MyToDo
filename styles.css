@@ -1,0 +1,61 @@
+.heading, .container{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    background: linear-gradient(to right, rgb(60, 220, 132), rgb(162, 231, 141),rgb(240, 72, 6) );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}
+.input{
+    padding: 10px;
+    width:50%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.btn{
+    padding: 10px;
+    background: rgb(244, 143, 70);
+    border-radius: 10px;
+    font-size: 20px;
+}
+body{
+    background-image: url(notebook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: rgb(103, 115, 100);
+}
+.toDoAdded{
+    background-color: rgb(205, 113, 47);
+    color: beige;
+    height: 50px;
+    width: 45%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(178, 160, 140);
+}
+.toDoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toDoCompleted{
+    background-color: rgb(75, 161, 88);
+    color:beige;
+    font-style: italic;
+    text-decoration: line-through;
+    transition: all 1s ease;
+}
+@media all and (max-width:800px){
+    h1{
+        font-size: 40px;
+    }
+}
